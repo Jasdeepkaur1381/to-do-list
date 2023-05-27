@@ -11,3 +11,112 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.outerDiv {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #6783aa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  background-color: #876ba8;
+  text-align: center;
+
+}
+
+.innerDiv {
+  width: 30%;
+  min-height: 80vh;
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  outline: none;
+  border: none;
+  text-align: center;
+  width: 40%;
+  border-bottom: 2px solid #8566aa;
+  margin-right: 20px;
+}
+
+button {
+  background-color: #876ba8;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: #20bf6b;
+}
+
+li {
+  text-align: start;
+  color: #c0b9cb;
+}
+
+ol {
+  list-style: none;
+}
+
+.item-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.item-style .fa-solid {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.item-style .fa-solid:hover {
+  background-color: crimson;
+  /* color: white; */
+}
+
+.item-style .fa-solid:hover .list_style {
+  color: crimson;
+}
+
+@media (max-width: 768px) {
+  .center_div {
+    width: 55%;
+  }
+
+  .item-style.fa-times {
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+  }
+}
